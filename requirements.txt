@@ -1,0 +1,2 @@
+Django==1.7.2
+-e git+ssh://git@github.com/SeamlessMedical/snaplib.git@d0e983e93653c548e0d7d9800b42014a51cb1e00#egg=snaplib-master
