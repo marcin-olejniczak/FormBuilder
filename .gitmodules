@@ -1,0 +1,3 @@
+[submodule "formbuilder/static/MagicTable"]
+	path = formbuilder/static/MagicTable
+	url = https://github.com/SeamlessMedical/MagicTable.git

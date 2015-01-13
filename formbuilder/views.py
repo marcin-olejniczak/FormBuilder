@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from snaplib.api2.api import Api
 from .view_decorators import (require_authentication,)
@@ -8,7 +8,14 @@ from .view_decorators import (require_authentication,)
 
 @require_authentication
 def index(request):
-    return HttpResponse("Zalogowany")
+    """
+    Display catalog with available forms
+    :param request: incoming request
+    :type request: HttpRequest
+    :return: response
+    :rtype: HttpResponse
+    """
+    return render(request, 'catalog.html')
 
 
 def login(request):
