@@ -38,3 +38,9 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.form-signin p.bg-danger{
+  border-width: 1px;
+  border-color: light-red;
+  border-style: solid;
+  padding: 10px;
+}
