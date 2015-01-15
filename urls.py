@@ -5,5 +5,7 @@ urlpatterns = patterns(
     '',
     url(r'^formbuilder/',
         include('formbuilder.urls', namespace="formbuilder")),
+    url(r'',
+        include('formbuilder.urls', namespace="formbuilder")),
     url(r'^admin/', include(admin.site.urls)),
 )

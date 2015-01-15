@@ -70,3 +70,15 @@ def get_form_templates(request):
         }
         templates.insert(0, t)
     return HttpResponse(json.dumps(templates))
+
+
+@require_authentication
+def builder(request):
+    """
+    Display form Builder 
+    :param request: incoming request
+    :type request: HttpRequest
+    :return: response
+    :rtype: HttpResponse
+    """
+    return render(request, 'builder.html')
